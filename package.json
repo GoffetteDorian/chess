@@ -1,0 +1,25 @@
+{
+  "name": "@azhro/chess",
+  "version": "0.0.1",
+  "description": "Web based chess game",
+  "author": "Azhro <goffettedorian@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build:client": "npx webpack --progress --profile --colors",
+    "work:client": "npx webpack --progress --watch"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.41",
+    "@types/react-dom": "^16.9.8",
+    "source-map-loader": "^1.0.1",
+    "ts-loader": "^7.0.5",
+    "typescript": "^3.9.6",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  }
+}
