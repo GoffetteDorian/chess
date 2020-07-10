@@ -1,3 +1,5 @@
+const path = require("path");
+
 module.exports = {
   mode: "production",
 
@@ -9,8 +11,25 @@ module.exports = {
     extensions: [".ts", ".tsx"],
   },
 
+  context: path.resolve(__dirname, "./src/client"),
+  entry: ["./index.tsx"],
   module: {
     rules: [
+      {
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[path][name].[ext]",
+            },
+          },
+        ],
+      },
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"],
+      },
       {
         test: /\.ts(x?)$/,
         exclude: /node_modules/,
