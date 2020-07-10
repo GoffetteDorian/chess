@@ -1,0 +1,11 @@
+{
+  "pieces": [
+    {
+      "slug": "king",
+      "name": "King",
+      "moves": [],
+      "value": 20
+    }
+  ],
+  "roster": []
+}
