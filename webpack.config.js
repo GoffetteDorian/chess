@@ -1,4 +1,4 @@
-const path = require("path");
+const { resolve } = require("path");
 
 module.exports = {
   mode: "production",
@@ -11,7 +11,7 @@ module.exports = {
     extensions: [".ts", ".tsx"],
   },
 
-  context: path.resolve(__dirname, "./src/client"),
+  context: resolve(__dirname, "./src/client"),
   entry: ["./index.tsx"],
   module: {
     rules: [
