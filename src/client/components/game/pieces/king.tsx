@@ -15,7 +15,6 @@ const King = (player: number) => {
     );
   };
 
-  console.log(isMovePossible(2, 3));
   /*
    * Always return empty array because of one step
    * @return {[]}
